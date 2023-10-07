@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Honeyhill Farm</title>
+
+		<!-- include bootstrap -->
+		<link
+			rel="stylesheet"
+			href="includes/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+		/>
+		<script src="includes/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+
+		<!-- include vue -->
+		<script src="includes/vue/vue.js"></script>
+
+		<!-- include js; add defer attribute so Vue can find the element it's looking for -->
+		<script src="js/index.js" defer></script>
+
+		<!-- include header component -->
+		<script src="components/header.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<v-header></v-header>
+			<div class="container">
+				<div class="tab-content">
+					<div
+						class="tab-pane fade show active"
+						id="home"
+						role="tabpanel"
+						aria-labelledby="home-tab"
+					>
+						<div class="row justify-content-center">
+							<div class="col-8 text-center">{{home_text}}</div>
+						</div>
+					</div>
+					<div
+						class="tab-pane fade"
+						id="about-us"
+						role="tabpanel"
+						aria-labelledby="about-us-tab"
+					>
+						<span v-html="about_text"></span>
+					</div>
+					<div
+						class="tab-pane fade"
+						id="contact-us"
+						role="tabpanel"
+						aria-labelledby="contact-us-tab"
+					>
+						<span v-html="contact_text"></span>
+					</div>
+					<div
+						class="tab-pane fade"
+						id="news-letter"
+						role="tabpanel"
+						aria-labelledby="news-letter-tab"
+					>
+						<span v-html="news_letter"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
