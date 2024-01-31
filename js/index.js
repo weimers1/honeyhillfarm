@@ -68,6 +68,14 @@ var app = new Vue({
 			<br/>
 			Sue and Fred Forsburg
 		`,
+		product_info: `
+			We sell only to individuals and in quantities of 1/8 or 1/2.<br/>
+			<br/>
+			$50 reserves 1/8 and $100 per half. 2 eighths equals 1/4, and 2 halves equals a whole.<br/>
+			Halves offer custom cutting.<br/>
+			<br/>
+			We accept deposits via PayPal to fforsburg@rochester.rr.com or your personal check to Honeyhill Farm, 6241 Price Rd., Livonia, NY 14487<br/>
+		`,
 		contact_text: `
 			We accept deposits via PayPal to fforsburg@rochester.rr.com or your personal check to Honeyhill Farm, 6241 Price Rd., Livonia, NY 14487<br/>
 			<br/>
@@ -78,5 +86,5 @@ var app = new Vue({
 			Sue and Fred Forsburg
 		`,
 	},
-	created: function () {},
+	methods: {},
 });

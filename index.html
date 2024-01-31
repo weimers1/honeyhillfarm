@@ -13,11 +13,17 @@
 		<!-- include vue -->
 		<script src="includes/vue/vue.js"></script>
 
+		<!-- include jquery -->
+		<script src="includes/jquery/jquery-3.7.1.min.js"></script>
+
 		<!-- include js; add defer attribute so Vue can find the element it's looking for -->
 		<script src="js/index.js" defer></script>
 
 		<!-- include header component -->
 		<script src="components/header.js"></script>
+
+		<!-- solution to some weird favicon.ico 404 error... -->
+		<link rel="shortcut icon" href="#" />
 	</head>
 	<body>
 		<div id="app">
@@ -49,6 +55,14 @@
 						aria-labelledby="contact-us-tab"
 					>
 						<span v-html="contact_text"></span>
+					</div>
+					<div
+						class="tab-pane fade"
+						id="products"
+						role="tabpanel"
+						aria-labelledby="products-tab"
+					>
+						<span v-html="product_info"></span>
 					</div>
 					<div
 						class="tab-pane fade"
